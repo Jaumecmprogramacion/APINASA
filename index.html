@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Space Web</title>
+  </head>
+  <body>
+    <header data-aos="fade-down" data-aos-delay="200">
+      <div class="container">
+        <div class="content">
+          <div data-aos="fade-down-right" data-aos-delay="300" class="logo">
+            <img src="assets/saturn.png" alt="logo" />
+            <a href="">Datos de la NASA</a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <a href="#" class="to-top"><i data-feather="chevron-up"></i></a>
+
+    <section class="hero">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h1 data-aos="fade-up" data-aos-delay="200">
+              Exploremos el espacio 
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="300">
+              Vamos a ver algunos datos curiosos sobre el espacio exterior.
+              <span>La NASA</span> ofrece gran cantidad de información que podemos consultar
+              <span>de forma gratuita</span> desde su página web.
+            </p>
+           
+          </div>
+
+          <div class="moon"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-up" data-aos-delay="400">
+          
+            <h1>¿QUE VAS A VER?</h1>
+            <p>
+              Te conectamos con los misterios del universo con
+              tecnología de vanguardia y contenido atractivo. Ya seas un estudiante
+              curioso o un entusiasta del espacio, hacemos que la exploración sea fácil
+             accesible para todos.
+            </p>
+          </div>
+
+        
+             
+         
+            </div>
+          </div>
+        
+      </div>
+      <section class="destination">
+        <div class="container">
+          <div class="content">
+            <div class="title" data-aos="fade-right" data-aos-delay="200">
+            
+             
+               
+              <div class="items mars" data-aos="fade-left" data-aos-delay="200">
+                <a href="javascript:void(0);" id="read-more-mars">
+                  ver
+                  <i data-feather="arrow-right" size="12px" class="icon"></i>
+                </a>
+                <h1>Imagen del día</h1>
+              </div>
+         
+              
+              <!-- Contenedor de la imagen APOD -->
+              <section class="apod" id="apod-container" style="display: none;">
+                <div class="container">
+                 
+                  <div id="apod-content">
+                    <img id="apod-image" alt="Imagen del día" />
+                  </div>
+                </div>
+
+            
+              </section>
+              <div class="items mars" data-aos="fade-left" data-aos-delay="400">
+                <a href="javascript:void(0);" id="read-more-mars">
+                  ver
+                  <i data-feather="arrow-right" size="12px" class="icon"></i>
+                </a>
+                <h1>Otro</h1>
+              </div>  
+              
+        
+      </section>
+    </section>
+
+   
+
+    <section class="status">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-down" data-aos-delay="400">
+            <h2>NUESTRA CASA</h2>
+            <p>
+              Recuerda, no hay planeta b, cuídalo.
+            </p>
+          </div>
+
+          <div class="planet">
+            <div class="earth">
+              <div class="moon">
+                <div class="moon-desc">
+                  <p>Luna</p>
+                  <hr />
+                </div>
+              </div>
+            </div>
+
+            <div class="desc desc-1">
+              <p class="name" data-aos="fade-right" data-aos-delay="200">
+                Superficie
+              </p>
+              <hr data-aos="fade-right" data-aos-delay="200" />
+              <p class="value" data-aos="fade-right" data-aos-delay="200">
+                510.1 million km²
+              </p>
+            </div>
+            <div class="desc desc-2">
+              <p class="name" data-aos="fade-right" data-aos-delay="400">
+                Temperatura
+              </p>
+              <hr data-aos="fade-right" data-aos-delay="400" />
+              <p class="value" data-aos="fade-right" data-aos-delay="400">
+                Promedio de 14°C, con rango de -88°C a 58°C
+              </p>
+            </div>
+            <div class="desc desc-3">
+              <p class="name" data-aos="fade-right" data-aos-delay="600">Edad</p>
+              <hr data-aos="fade-right" data-aos-delay="600" />
+              <p class="value" data-aos="fade-right" data-aos-delay="600">
+                4.54 billion years
+              </p>
+            </div>
+            <div class="desc desc-4">
+              <p class="name" data-aos="fade-left" data-aos-delay="200">
+                Gravedad
+              </p>
+              <hr data-aos="fade-left" data-aos-delay="200" />
+              <p class="value" data-aos="fade-left" data-aos-delay="200">
+                9.8 m/s²
+              </p>
+            </div>
+            <div class="desc desc-5">
+              <p class="name" data-aos="fade-left" data-aos-delay="400">Masa</p>
+              <hr data-aos="fade-left" data-aos-delay="400" />
+              <p class="value" data-aos="fade-left" data-aos-delay="400">
+                5.97 * 10^24 kg
+              </p>
+            </div>
+            <div class="desc desc-6">
+              <p class="name" data-aos="fade-left" data-aos-delay="600">
+                Niveles de oxigeno
+              </p>
+              <hr data-aos="fade-left" data-aos-delay="600" />
+              <p class="value" data-aos="fade-left" data-aos-delay="600">
+                21% (en la atmosfera)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+ 
+
+ 
+
+    <footer>
+          <p>Creado por Jaime Crespo 2024</p>
+    </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
