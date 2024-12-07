@@ -22,14 +22,22 @@ async function fetchAPOD() {
   }
 }
 
-// Muestra el contenedor con la imagen cuando se hace clic en "Read More"
-readMoreButton.addEventListener("click", function() {
-  // Muestra el contenedor de la imagen
-  apodContainer.style.display = "block";
-  
-  // Llama la función para obtener la imagen del día
-  fetchAPOD();
+// Alternar entre mostrar y ocultar la imagen
+readMoreButton.addEventListener("click", function () {
+  if (apodContainer.style.display === "block") {
+    // Ocultar la imagen
+    apodContainer.style.display = "none";
+    readMoreButton.textContent = "Ver";
+  } else {
+    // Mostrar la imagen
+    apodContainer.style.display = "block";
+    readMoreButton.textContent = "Cerrar";
+
+    // Llama la función para obtener la imagen del día
+    fetchAPOD();
+  }
 });
+
 
 
 

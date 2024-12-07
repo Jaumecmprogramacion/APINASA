@@ -1028,11 +1028,89 @@ footer p {
     flex: 1 1 100%; /* Cada sección ocupa el 100% del ancho */
   }
 }
+/* Estilo para el enlace "ver" */
+.items a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4b4b4ee3; /* Color azul */
+  border-radius: 8px; /* Bordes redondeados */
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(105, 103, 103, 0.2); /* Sombra */
+  transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+.items a:hover {
+  
+  transform: scale(1.1); /* Crece un poco al pasar el ratón */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más grande */
+}
+
+.items a i {
+  margin-left: 8px; /* Espacio entre el texto y el icono */
+  vertical-align: middle; /* Alinea el icono verticalmente */
+}
+
+
+#apod-container {
+  display: none;
+  margin-bottom: 20px; /* Añade espacio debajo del contenedor */
+}
 
 
 
+a {
+  color: inherit; /* Mantiene el color del texto original */
+  text-decoration: none; /* Evita subrayados si los hay */
+}
 
+a:focus,
+a:active {
+  outline: none; /* Elimina el contorno que aparece al hacer clic */
+  color: inherit; /* No cambia el color */
+}
+/* Asegúrate de que el contenedor de los elementos esté centrado */
+.contenedornasa .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  text-align: center; /* Centra el texto dentro de cada contenedor */
+}
 
+/* Centra el contenedor con el título y el enlace */
+.items.mars {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  margin-bottom: 20px; /* Espacio entre los elementos */
+}
 
+/* Opcional: Centra el texto dentro de los encabezados */
+h1 {
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center;
+}
 
+/* Centra la imagen y el contenido de la imagen */
+#apod-container {
+  display: flex;
+  justify-content: center; /* Centra la imagen dentro del contenedor */
+  align-items: center;
+}
 
+#apod-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#apod-image {
+  max-width: 100%; /* Asegura que la imagen no sobrepase el contenedor */
+  height: auto;
+}
